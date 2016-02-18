@@ -1,0 +1,22 @@
+extends layout
+
+block content
+	h1= title
+	p Welcome to #{title} 
+	input#name(type='text', value='', style='width: 30%;float:left ,margin: 0 0 20px 0; border: solid 1px #222; ')
+	input#username(type='button', value='Change Username', style='width: 30%;')
+	
+	textarea#code( value='code', style='width: 74%; height: 300px;float:left; margin: 0 0 20px 0; border: solid 1px #999; overflow-y: scroll;')
+	h4#userlabel(style='width: 23%; height: auto; float:right; display:inline;margin: 0 0 20px 0; border: solid 1px #999; overflow-y: scroll;') Current Editor
+	aside#using(style='width: 23%; height: auto; float:right; display:inline;margin: 0 0 20px 0; border: solid 1px #999; overflow-y: scroll;')
+	aside(style='width: 23%; height: 200px;float:right; margin: 0 0 20px 0; border: solid 1px #999; overflow-y: scroll;') 
+		textarea#chatMessage(type="text",word-wrap: break-word; style='width: 100%; height: 50px;float:right; margin:0 0 0 0; border: solid 1px #999; overflow-y: scroll;') 
+		input#send(type='button', value='Send', style='width: 30%;')
+		#chat(style='width: 100%; height: auto;')
+	
+	h4#contentLabel(style='width: 74%; float:left; margin: 0 0 20px 0; ')
+	#content( style='width: 70%; height: 300px;float:left; margin: 0 0 20px 0; border: solid 1px #999; overflow-y: scroll;') 
+		
+	input#clear(type='button', value='Clear Text', style='width: 74%;float:left;')
+	input#restore(type='button', value='Revert Code 5 Step', style='width: 37%;float:left;') 
+	input#restoreOne(type='button', value='Refert Code 1 Step', style='width: 37%;float:left;')
