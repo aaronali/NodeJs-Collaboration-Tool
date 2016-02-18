@@ -64,7 +64,7 @@ io.sockets.on('connection', function (socket) {
  	  });
 	
  	socket.on('clear', function(event){
- 		oldShare.push(shared)
+ 		oldShared.push(shared)
  		shared="";
  		
  		io.sockets.emit("code",{code:shared , id:socket.user});
