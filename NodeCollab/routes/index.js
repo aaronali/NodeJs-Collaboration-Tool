@@ -4,5 +4,5 @@
  */
 
 exports.index = function(req, res){
-  res.render('index', { title: 'Shared Reviewer' });
+  res.render('index', { title: 'Node Collab	' });
 };
